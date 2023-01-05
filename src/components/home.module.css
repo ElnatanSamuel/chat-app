@@ -1,0 +1,231 @@
+.home {
+  height: 100vh;
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
+
+.chat {
+  flex: 2;
+  background-color: rgb(148, 197, 204);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(161, 146, 180);
+  height: 50px;
+  box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.37);
+}
+
+.logo {
+  font-weight: bolder;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.users {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-right: 10px;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 14px;
+  padding-right: 20px;
+}
+
+.useravatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.logbtn {
+  padding: 7px 15px;
+  background: rgb(148, 197, 204);
+  color: #000;
+  border: none;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputsearch {
+  margin-top: 20px;
+  color: rgba(0, 0, 0, 0.6);
+  border: none;
+  border-bottom: 1px solid rgb(148, 197, 204);
+  outline: none;
+  width: 100%;
+  background: transparent;
+  padding: 10px 10px;
+}
+
+.imguser {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.userbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+.userbar:hover {
+  background: rgb(161, 140, 180);
+}
+
+.chatnav {
+  background: rgb(255, 255, 255);
+  height: 50px;
+}
+
+.navchat {
+  padding: 5px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chatuser {
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.chatavatar {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.message {
+  height: calc(100% - 100px);
+}
+
+.inputmes {
+  background: white;
+  padding: 10px;
+  height: 50px;
+  display: flex;
+
+  align-items: center;
+}
+
+.messageinput {
+  margin-left: 10px;
+  outline: none;
+  border: none;
+  padding: 10px;
+  width: 100%;
+}
+
+.send {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sendbtn {
+  border: none;
+  background: rgb(161, 140, 180);
+  padding: 5px 20px;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.message {
+  overflow: scroll;
+}
+
+.messagebuttonsicon {
+  cursor: pointer;
+}
+
+.messageBox {
+  display: flex;
+  padding: 10px;
+}
+
+.messageInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.imgmessagebox {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.msgcontentimg {
+  max-width: 30%;
+}
+
+.messagepopuptime {
+  font-size: 12px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.messageContent {
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.actualmsg {
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 0px 10px 10px 10px;
+  font-size: 14px;
+  max-width: max-content;
+  margin-bottom: 10px;
+}
+
+.ownerbox {
+  flex-direction: row-reverse;
+}
+
+.ownerbox > .messageContent {
+  align-items: flex-end;
+}
+
+.ownerbox > .messageContent > .actualmsg {
+  border-radius: 10px 0px 10px 10px;
+  background: linear-gradient(90deg, rgb(161, 146, 180), rgb(161, 169, 180));
+}

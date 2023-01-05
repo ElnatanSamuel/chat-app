@@ -1,0 +1,82 @@
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.formWrapper {
+  background: rgba(255, 255, 255, 0.1);
+  /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 80px;
+}
+
+.formElements {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding-top: 40px;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  color: #000;
+}
+
+.inputform {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgb(180, 210, 231);
+  background: transparent;
+  padding: 10px 20px;
+  color: rgba(0, 0, 0, 0.6);
+  width: 300px;
+}
+
+.btnregister {
+  padding: 10px 10px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(148, 197, 204);
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+}
+
+.lastnote {
+  font-size: 12px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.avatarlabel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border: 1px solid #000;
+  border-radius: 100%;
+}
+
+.avatartext {
+  font-size: 12px;
+  opacity: 0.8;
+  padding-top: 10px;
+  cursor: pointer;
+}
